@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <title>Stories. </title>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
+	<link rel="stylesheet" href="css/style.css"/>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
+    
+    <link rel="image_src" href="https://sound-light-technology.itsinsta.site/img/og/og.jpg" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sound-light-technology.itsinsta.site" />
+    <meta property="og:image" content="https://sound-light-technology.itsinsta.site/img/og/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="150"/>
+    <meta property="og:image:height" content="150"/>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:locale" content="Ru-ru" />
+    <meta property="og:site_name" content="sound.light.technology" />
+
+    <!--modernizr-->
+	<script src="js/vendors/modernizr-custom.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+        </p>
+    <![endif]-->
+    <noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
+    </noscript>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="header__left">
+						<div class="header__logo">
+							<div class="header__logo-pic"><img src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-19/s150x150/27578971_235502726992628_7575290547330351104_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_ohc=mjESarnGeIQAX964YSY&oh=f31ae847f9a478e57618294e77fc00e0&oe=5E94A961" alt="Звук.Свет.Технологии" /></div>
+							<div class="header__logo-txt">sound.light.technology</div>
+						</div>
+						<div class="header__title"></div>
+					</div>
+				</div>
+			</div>
+		</header>	
+		<div class="main-sec">
+			<div class="container">
+				<div class="main-sec__wrap">
+					<div class="main-sec__txt">
+						<p>&nbsp;</p>
+						<div class="search">
+							<input type="search" class="input search__input" placeholder="Story">
+							<button id="btn_save" class="btn search__btn" type="submit" title="Сохранить"><i class="fa fa-save" aria-hidden="true"></i></button>
+							<p>&nbsp;</p>
+							<button id="btn_delete" class="btn search__btn" type="submit" title="Удалить"><i class="fa fa-remove" aria-hidden="true"></i></button>
+							<p>&nbsp;
+								<div id="choosen">0</div> / <div id="total">0</div>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="stories">
+			<div class="container">
+				<div class="stories__slider-wrap">
+					<div class="stories__slider" id="js-stories-slider">
+						<div class="swiper-wrapper">
+						</div>
+					</div>
+					<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+					<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="items" id="js-items">
+			<div class="container">
+				<div class="items-main" id="js-items-main">
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="tekhnicheskoe-obespechenie-kontserta" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/84330343_1554078021413701_486734479944958914_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=101&_nc_ohc=ocKQMirfMjMAX9aQP5l&oh=9f67cd877d4dd0c54414064ff76a2f7a&oe=5E919EE8" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Техническое обеспечение концерта">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="tekhnicheskoe-obespechenie-vechera" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/e35/85179420_111585097098427_7205867013317735200_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=107&_nc_ohc=Alp_sE706a0AX_CspcV&oh=d5694eb2f7c8c9166dd5ec7f19f62b91&oe=5E92933F" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Техническое обеспечение вечера">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="konferentsiya-kompanii" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/82906854_2861080033914169_3259383181152500833_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=101&_nc_ohc=mHy1ME00WwIAX-6IKEV&oh=206ae16f6ce0b86e64644fece7d5a196&oe=5E93B1CE" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Конференция компании">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="protone-700-" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/83170096_116822393050308_8319431607541678286_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=100&_nc_ohc=V-G7ppYXsWkAX8lIiHd&oh=889bf344506c63a103336899964f1540&oe=5EA75875" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="ProTone 700 !">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="protone-" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/82172121_213361369827374_407054934557057889_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=102&_nc_ohc=IRH0NmGgy3AAX8zk9mn&oh=7994b922c7082e213e1f23f9175377ff&oe=5EA4E9D3" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="ProTone !">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="hashsoundlighttechnology" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/e35/82576366_939420676453777_5334342227325481864_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=101&_nc_ohc=Iw8zqVsNSYUAX9bxeA-&oh=d04eb647c0401770117b257dd951a504&oe=5E959CC5" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="#soundlighttechnology">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="tekhnicheskoe-obespechenie-novogodnikh" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/e35/79479401_196799891458953_7642506999722942035_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=109&_nc_ohc=WjM24XyIqPoAX-coDX_&oh=c71393a2d91b5b1e0cefd5ed9a26d685&oe=5E93ECAC" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Техническое обеспечение новогодних">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="zakonchili" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/71813453_186426205742414_8511836243568678613_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=102&_nc_ohc=icQvfFxOaZQAX8hCMKb&oh=8f3d93dd43a54517e99cc1af836b6219&oe=5E925B53" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Закончили!">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="4-den-x-zaklyuchitel-nyy" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/79600065_177816989938259_5463155878765230248_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=111&_nc_ohc=EsHKE5chvEYAX8CkGNQ&oh=b5af7a8176ef2ae07a790be73d27a4ec&oe=5EA4518D" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="4 день, заключительный!">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="neobkhodimoe-i-dostatochnoe" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/e35/79826107_2511179092473139_3942399759199009344_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=107&_nc_ohc=NPUsOSrIbfkAX8I_cR_&oh=750bc9dab3fda55a7577821236d770bd&oe=5EA489CF" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Необходимое и достаточное.">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="vedushchie-inzhenery-otshchepentsy-xsound" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/e35/82064103_136406080662297_5943353012112884959_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=109&_nc_ohc=2wkq4T0k-H4AX-5ZmSm&oh=4910fd7ad356380d6d8fc3578388e688&oe=5EA49003" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Ведущие инженеры-отщепенцы @sound.">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="vedushchie-inzhenery-xsound" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/79603536_489061138694778_1734139015009387597_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=XhWANdptyAUAX95ujPr&oh=54712ccc9e71158b987c1b6c9ecbc77e&oe=5EA5A4A5" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Ведущие инженеры @sound.">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!--swiper-->
+	<script src="js/vendors/swiper.min.js"></script>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="js/vendors/jquery.lazyloadxt.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+
+	<script type="text/javascript">
+var currentTitle = '';
+var tags = {
+};
+
+function cleanupItems() {
+	$(".items-item").each(function() {
+		$(this).find("input").prop("checked", false);
+	});
+}
+
+function refreshStories() {
+	$(".stories__slide").each(function() {
+		var checkbox = $(this).find("input");
+
+		if ($(this).prop("title") != currentTitle) {
+			checkbox.prop("checked", false);
+		} else if (!$(this).is(':checked')) {
+			checkbox.prop("checked", true);
+		}
+	});
+
+	resizeSwiper();
+}
+
+function refreshChoosen() {
+	if (currentTitle == ''  || tags[currentTitle] == null) {
+		$("#choosen").text(0);
+	} else {
+		$("#choosen").text(tags[currentTitle].length);
+	}
+}
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
+var storyClick = function () {
+	var title = $(this).closest(".stories__slide").prop("title");
+	if ($(this).is(':checked')) {
+		currentTitle = title;
+
+		refreshStories();
+
+		// Set all choosen blocks.
+		if (tags[currentTitle] != null) {
+			$(".items-item").each(function() {
+				var checkbox = $(this).find("input");
+				checkbox.prop("checked", $.inArray(checkbox.prop("id"), tags[currentTitle]) !== -1);
+			});
+		} else {
+			cleanupItems();
+		}
+	} else {
+		currentTitle = '';
+
+		cleanupItems();
+	}
+	$(".search__input").val(currentTitle);
+	refreshChoosen();
+}
+
+function setStoryBackground(title) {
+	$(".stories__slide").each(function() {
+		if ($(this).prop("title") == title) {
+			var divPic = $(this).find('.stories__slide-pic');
+
+			var img = getStoryBackground(title);
+			divPic.css("background-image", "url(" + img + ")");
+		}
+	});
+}
+
+function getStoryBackground(title) {
+	if (title == null) {
+		return null;
+	}
+
+	var tag = tags[title][0];
+
+	var item = $(".items-item").filter(function() {
+		return $(this).find("input").prop("id") == tag;
+	}).first();
+
+	var url = item.find("img").attr('data-src');
+	if (typeof url !== typeof undefined && url !== false) {
+		return url;
+	}
+	return item.find("img").prop('src');
+}
+
+function addStory(title) {
+	$(".swiper-wrapper").prepend(`
+							<div class="swiper-slide">
+								<div class="stories__slide" title="` + title + `">
+									<label class="stories__slide__check">
+										<input type="checkbox" />
+										<div class="stories__slide-pic" style=""></div>
+										<div class="stories__slide-txt">` + title + `</div>
+									</label>
+								</div>
+							</div>
+`);
+	var added = $(".swiper-slide").first();
+	added.width(added.height());
+	added.find("input").click(storyClick);
+}
+
+function loadStories() {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories",
+		type: "GET",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); },
+		success: function (data) { 
+			tags = {};
+			$(".stories__slide").remove();
+
+			$.each(data, function(index, element) {
+				tags[element.title] = element.posts;
+
+				addStory(element.title);
+
+				setStoryBackground(element.title);
+			});
+
+			setTimeout(function(){
+				resizeSwiper();
+			}, 1000);
+		}
+	});
+}
+
+function linkStoryPost(story, post) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story + "/link/" + post,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function unlinkStoryPost(story, post) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story + "/unlink/" + post,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function createStory(story) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function renameStory(story, newStory) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story + "/rename/" + newStory,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function resizeSwiper(){
+	swiper.update();
+}
+
+function deleteStory(storyTitle) {
+	tags[storyTitle] = [];
+
+	var story = $(".stories__slide").filter(function() {
+		return $(this).prop("title") == storyTitle;
+	}).first().parent();
+			
+	story.remove();
+
+	cleanupItems();
+
+	resizeSwiper();
+
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + storyTitle,
+		type: "DELETE",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+$(document).ready(function() {
+	key = getUrlParameter("key");
+
+	loadStories();
+
+	$("#total").text($(".items-item").length);
+
+    $(".stories__slide").each(function() {
+		$(this).find("input").click(storyClick);
+	});
+
+    $(".items-item").each(function() {
+		$(this).find("input").click(function() {
+			if (currentTitle != '') {
+				var id = $(this).prop("id");
+
+				if ($(this).is(':checked')) {
+					if (tags[currentTitle] == null) {
+						tags[currentTitle] = [ id ];
+					} else {
+						tags[currentTitle] = $.merge(tags[currentTitle], [ id ]);
+					}
+
+					linkStoryPost(currentTitle, id);
+				} else {
+					tags[currentTitle] = $(tags[currentTitle]).not([ id ]).get();
+
+					unlinkStoryPost(currentTitle, id);
+				}
+
+				if (tags[currentTitle].length == 1) {
+					setStoryBackground(currentTitle);
+				}
+
+				$("#choosen").text(tags[currentTitle].length);
+			} else {
+				$(this).prop("checked", false);
+			}
+		});
+	});
+
+	$("#btn_save").click(function(){
+		var newTitle = $(".search__input").val();
+
+		if (currentTitle != '' && newTitle != '') {
+			tags[newTitle] = tags[currentTitle];
+
+			var story = $(".stories__slide").filter(function(){
+				return $(this).prop("title") == currentTitle;
+			}).first();
+			story.prop("title", newTitle);
+
+			story.find(".stories__slide-txt").text(newTitle);
+
+			renameStory(currentTitle, newTitle);
+
+			currentTitle = newTitle;
+		} else if (currentTitle != '' && newTitle == '') {
+			deleteStory(currentTitle);
+
+			currentTitle = '';
+			cleanupItems();
+		} else if (currentTitle == '' && newTitle != '') {
+			var stories = $(".stories__slide").filter(function() {
+				return $(this).prop("title") == newTitle;
+			});
+
+			if (stories.length == 0) {
+				currentTitle = newTitle;
+
+				addStory(newTitle);
+
+				refreshStories();
+
+				createStory(currentTitle);
+			}
+		}
+
+		$(".items-item").each(function() {
+			var checkbox = $(this).find("input");
+			checkbox.prop("checked", false);
+		});
+		cleanupItems();
+	});
+
+	$("#btn_delete").click(function(){
+		if (currentTitle == '') {
+			return;
+		}
+
+		deleteStory(currentTitle);
+
+		currentTitle = '';
+		cleanupItems();
+
+		$(".search__input").val('');
+	});
+});
+	</script>
+</body>
+</html>
